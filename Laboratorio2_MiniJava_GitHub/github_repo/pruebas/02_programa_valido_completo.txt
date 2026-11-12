@@ -1,0 +1,56 @@
+int x = 5;
+int y = 10;
+int z = 0;
+boolean activo = true;
+char inicial = 'E';
+String nombre = "Juan";
+
+if (x < y) {
+    if (y > 5) {
+        System.out.println(y);
+    } else {
+        System.out.print(x);
+    }
+} else {
+    if (x == 5) {
+        z = x + y;
+    } else {
+        z = 0;
+    }
+}
+
+while (x < 10) {
+    for (int i = 0; i < 3; i++) {
+        z = z + i;
+    }
+    x++;
+}
+
+do {
+    y--;
+    z *= 2;
+} while (y > 0);
+
+for (int k = 10; k >= 0; ) {
+    z -= k;
+}
+
+for (int m = 0; m < 20; m = m + 5) {
+    z += m;
+}
+
+switch (z) {
+    case 1:
+        System.out.println("uno");
+        break;
+    case 2:
+        System.out.println("dos");
+        break;
+    default:
+        System.out.println("otro");
+}
+
+if (nombre == "Juan" && activo || inicial != 'A') {
+    z = (x + 2) * 30 % y;
+    activo = !activo;
+}

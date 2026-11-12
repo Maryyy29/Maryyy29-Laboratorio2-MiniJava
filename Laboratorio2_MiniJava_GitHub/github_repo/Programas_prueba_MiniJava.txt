@@ -1,0 +1,165 @@
+// ARCHIVO DE PRUEBA PARA EL ANALIZADOR SINTACTICO MINIJAVA
+// Contiene cuatro programas: dos validos y dos con errores sintacticos.
+// Para probar uno solo, copia ese bloque en un archivo .txt independiente.
+
+// ============================================================
+// PROGRAMA 1: VALIDO - estructuras basicas
+// ============================================================
+
+int x = 10;
+float y = 3.14;
+String mensaje = "Hola mundo";
+
+if (x >= 10) {
+    System.out.println(mensaje);
+}
+
+for (int i = 0; i < 5; i++) {
+    if (i < 3) {
+        System.out.println(i);
+    }
+}
+
+while (x < 20) {
+    x++;
+}
+
+
+// ============================================================
+// PROGRAMA 2: VALIDO - estructuras completas
+// ============================================================
+
+int x = 5;
+int y = 10;
+int z = 0;
+boolean activo = true;
+char inicial = 'E';
+String nombre = "Juan";
+
+if (x < y) {
+    if (y > 5) {
+        System.out.println(y);
+    } else {
+        System.out.print(x);
+    }
+} else {
+    if (x == 5) {
+        z = x + y;
+    } else {
+        z = 0;
+    }
+}
+
+while (x < 10) {
+    for (int i = 0; i < 3; i++) {
+        z = z + i;
+    }
+    x++;
+}
+
+do {
+    y--;
+    z *= 2;
+} while (y > 0);
+
+for (int k = 10; k >= 0; ) {
+    z -= k;
+}
+
+for (int m = 0; m < 20; m = m + 5) {
+    z += m;
+}
+
+switch (z) {
+    case 1:
+        System.out.println("uno");
+        break;
+    case 2:
+        System.out.println("dos");
+        break;
+    default:
+        System.out.println("otro");
+}
+
+if (nombre == "Juan" && activo || inicial != 'A') {
+    z = (x + 2) * 30 % y;
+    activo = !activo;
+}
+
+
+// ============================================================
+// PROGRAMA 3: CON ERRORES - condicion, for y punto y coma
+// ============================================================
+
+int x = 10;
+int y = 5;
+
+if (x > ) {
+    for (int i = 0; i < 3 i++) {
+        y = y + i
+    }
+} else {
+    System.out.println(y);
+}
+
+while (x < 20 {
+    x++;
+}
+
+
+// ============================================================
+// PROGRAMA 4: CON ERRORES - varios tipos de recuperacion
+// ============================================================
+
+String nombre = "Juan";
+String estado = "activo"
+
+int contador = 0;
+
+if (nombre == "Juan" && estado == "activo") {
+    System.out.println(nombre);
+} else {
+    System.out.println("inactivo");
+}
+
+if () {
+    contador++;
+}
+
+if (contador > ) {
+    contador--;
+}
+
+if (contador > 3 {
+    System.out.print(contador)
+}
+
+while (nombre != "" || estado == "activo") {
+    nombre = nombre + "!";
+    estado = "activo"
+    System.out.println(estado;
+    contador++
+}
+
+do {
+    contador--
+} while (contador > 0)
+
+switch (contador) {
+    case 1
+        System.out.println("uno");
+        break
+    case 2:
+        continue
+    default:
+        System.out.println("otro");
+}
+
+for (int i = 0; i < 5) {
+    contador += i;
+}
+
+int 456 = 7;
+
+if (contador > 3) {
+    System.out.println("fin");
