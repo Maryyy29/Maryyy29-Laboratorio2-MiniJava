@@ -1,0 +1,42 @@
+
+int edad = 20
+
+edad = 21
+
+edad++
+
+while (edad > 0) {
+    break
+}
+
+while (edad > 0) {
+    continue
+}
+
+System.out.println(edad)
+
+System.out.println(edad;
+
+if () {
+    edad = 1;
+}
+
+for (int i = 0; i < 5 i++) {
+    edad = i;
+}
+
+switch (edad) {
+    case 1
+        edad = 2;
+        break;
+    default:
+        break;
+}
+
+do {
+    edad++;
+} while (edad < 5)
+
+
+if (edad > 0) {
+    edad = 3;

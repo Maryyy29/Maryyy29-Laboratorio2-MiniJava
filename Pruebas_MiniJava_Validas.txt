@@ -1,0 +1,51 @@
+int edad = 20;
+float promedio = 4.5;
+String nombre = "Maria";
+boolean activo = true;
+char inicial = 'M';
+
+int total;
+total = 10 + 5 * 2;
+total += 1;
+total++;
+total--;
+
+print(total);
+System.out.println(nombre);
+
+if (total > 10) {
+    print("Mayor que diez");
+} else {
+    print("Diez o menos");
+}
+
+while (total > 0) {
+    total--;
+}
+
+total = total + 1;
+
+for (int i = 0; i < 5; i = i + 1) {
+    print(i);
+}
+
+for (int j = 0; j < 3; ) {
+    j++;
+}
+
+switch (total) {
+    case 1:
+        print("uno");
+        break;
+    case 2:
+        print("dos");
+        break;
+    default:
+        print("otro");
+}
+
+if (activo && total >= 0) {
+    if (edad != 0) {
+        print("condicion compuesta");
+    }
+}
