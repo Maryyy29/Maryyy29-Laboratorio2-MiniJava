@@ -1,0 +1,27 @@
+RESULTADOS DE REFERENCIA - ANALIZADOR SINTACTICO MINIJAVA
+
+A. ARCHIVO: Pruebas_MiniJava_Validas.txt
+
+Resultado comprobado con la version actual del notebook:
+- Debe imprimir: Codigo Valido
+- No debe listar errores sintacticos.
+- Debe construir el arbol con declaraciones, asignaciones, expresiones,
+  impresiones, if/else, while, for y switch/case.
+
+B. ARCHIVO: Pruebas_MiniJava_Con_Errores.txt
+
+Con la version actual del notebook, se comprobaron estos reportes:
+
+Linea 2:  declaracion - falta punto y coma
+Linea 4:  asignacion - falta punto y coma
+Linea 6:  incremento - falta punto y coma
+Linea 9:  break - falta punto y coma
+Linea 13: continue - falta punto y coma
+Linea 16: print - falta punto y coma
+Linea 18: print - falta parentesis de cierre
+Linea 20: condicion - condicion vacia
+Linea 24: for - faltan separadores ';' en el encabezado
+Linea 29: case - faltan dos puntos
+Linea 36: dowhile - falta punto y coma
+Linea 43: bloque - falta llave de cierre
+
